@@ -4,11 +4,11 @@ from app.database.models import async_close
 
 async def main():
     try:
-        user = await rq.get_user(899134543)
+        user = await rq.get_user(999999999)
         print("Пользователь найден:", user is not None)
 
         if user:
-            budgets = await rq.get_budgets(899134543)
+            budgets = await rq.get_budgets(999999999)
             print("Количество бюджетов:", len(budgets))
 
             for budget in budgets:

@@ -7,7 +7,7 @@ from app.database.models import async_close
 
 
 # Укажи свой Telegram ID
-TG_ID = 899134543
+TG_ID = 999999999
 
 
 async def main():

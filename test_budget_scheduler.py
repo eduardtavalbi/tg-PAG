@@ -14,7 +14,7 @@ from app.database import requests as rq
 from app import budget_scheduler as scheduler
 
 
-TEST_TG_ID = 899134543
+TEST_TG_ID = 999999999
 TEST_NOW = datetime(2026, 11, 18, 9, 0)
 TEST_PERIOD = "2026-11"
 TEST_CATEGORY = "Еда"

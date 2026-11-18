@@ -4,7 +4,7 @@ from app.database import requests as rq
 
 
 async def main():
-    tg_id = 899134543
+    tg_id = 999999999
 
 
     active = await rq.get_goals(tg_id)

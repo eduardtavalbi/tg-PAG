@@ -6,7 +6,7 @@ from app.ai.gemini import generate_financial_advice
 
 
 async def main():
-    tg_id = 899134543
+    tg_id = 999999999
 
     print("Получаю финансовые данные...")
 
