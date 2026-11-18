@@ -187,7 +187,7 @@ async def send_monthly_budget_notifications(
             len(reserved),
         )
 
-    except Exception:
+    except (Exception, asyncio.CancelledError):
         # Если отправка или резервирование завершились ошибкой,
         # освобождаем уже созданные резервирования.
         for notification in reserved:
@@ -268,7 +268,7 @@ async def check_user_budget(bot: Bot, tg_id: int):
                         text=message_text,
                     )
 
-                except Exception:
+                except (Exception, asyncio.CancelledError):
                     # При ошибке восстанавливаем предыдущее состояние записей.
                     for warning, previous_severity, previous_sent_at in reserved_warnings:
                         try:
